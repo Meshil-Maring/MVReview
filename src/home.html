@@ -8,12 +8,12 @@
   <body>
     <!-- Header -->
     <header
-      class="bg-b-0 text-xl items-center p-6 flex text-white justify-start"
+      class="bg-bg-0 text-xl items-center p-6 flex text-white justify-start"
     >
       <h1 class="text-3xl text-white font-bold">MVReview</h1>
       <ul class="flex gap-5 flex-row flex-start ml-10 w-full">
         <li
-          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yellow-300 group"
+          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yw-0 group"
         >
           <div
             class="w-6 h-6 bg-white group-hover:bg-yellow-300"
@@ -28,7 +28,7 @@
         </li>
 
         <li
-          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yellow-300 group"
+          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yw-0 group"
         >
           <div
             class="w-6 h-6 bg-white group-hover:bg-yellow-300"
@@ -43,7 +43,7 @@
         </li>
 
         <li
-          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yellow-300 group"
+          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yw-0 group"
         >
           <div
             class="w-6 h-6 bg-white group-hover:bg-yellow-300"
@@ -58,7 +58,7 @@
         </li>
 
         <li
-          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yellow-300 group"
+          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yw-0 group"
         >
           <div
             class="w-6 h-6 bg-white group-hover:bg-yellow-300"
@@ -77,7 +77,7 @@
         class="flex flex-row gap-4 mr-5 items-center justify-end ml-auto w-full"
       >
         <li
-          class="bg-b-1 rounded-full h-12 pl-5 flex items-center gap-2 w-[60%]"
+          class="bg-bg-1 rounded-full h-12 pl-5 flex items-center gap-2 w-[60%]"
         >
           <input
             placeholder="Search Movies..."
@@ -85,13 +85,13 @@
           />
           <img
             src="./icons/search.svg"
-            class="bg-b-1 rounded-full p-2 w-10 mr-4"
+            class="bg-bg-1 rounded-full p-2 w-10 mr-2"
             alt=""
           />
         </li>
 
         <li
-          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yellow-300 group"
+          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yw-0 group"
         >
           <div
             class="w-5 h-5 bg-white group-hover:bg-yellow-300"
@@ -101,11 +101,11 @@
               mask-size: contain;
               -webkit-mask-size: contain;
             "
-          ></div>
+          />
         </li>
 
         <li
-          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yellow-300 group"
+          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yw-0 group"
         >
           <div
             class="w-5 h-5 bg-white group-hover:bg-yellow-300"
@@ -119,5 +119,53 @@
         </li>
       </ul>
     </header>
+
+    <!-- Hero Seaction -->
+    <section
+      class="w-full h-[90vh] bg-cover bg-center bg-no-repeat"
+      style="background-image: url(./images/Dune.jpg)"
+    >
+      <div
+        class="bg-gradient-to-r from-[#000] to-[rgba(0,0,0,0.35)] bg-opacity-50 h-full flex flex-col justify-center items-start p-20 gap-6"
+      >
+        <h2 class="text-4xl font-bold text-white">
+          Dune: Part Two
+          <p class="text-lg mt-2 font-light">2021</p>
+        </h2>
+        <div class="flex gap-4 items-center">
+          <aside class="flex gap-0 items-center">
+            <p class="text-xl font-bold text-yw-0 mr-2">4.8</p>
+            <img src="./icons/star.svg" alt="" />
+            <img src="./icons/star.svg" alt="" />
+            <img src="./icons/star.svg" alt="" />
+            <img src="./icons/star.svg" alt="" />
+            <img src="./icons/half-start.svg" alt="" />
+          </aside>
+
+          <p class="text-xl text-w-0">96% Critics Score</p>
+          <p class="text-xl text-w-0">15.2K Reviews</p>
+        </div>
+
+        <aside class="w-[50%] text-white text-xl">
+          The saga continues as Paul Atreides unites with Chani and the Fremen
+          while seeking revenge against the conspirators who destroyed his
+          family.
+        </aside>
+
+        <div class="flex gap-4">
+          <button
+            class="bg-red-700 text-xl h-12 flex items-center px-6 text-white rounded-full cursor-pointer"
+          >
+            Read More
+          </button>
+          <button
+            class="bg-[#ffffff5f] text-xl h-12 flex items-center px-6 text-white rounded-full cursor-pointer gap-2"
+          >
+            <img src="./icons/play.svg" alt="" />
+            Watch Trailer
+          </button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
