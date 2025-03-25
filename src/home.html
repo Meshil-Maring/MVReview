@@ -6,19 +6,117 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="bg-primary text-4xl p-10 flex text-white justify-start">
-      <h1 class="text-4xl text-amber-300">MVReview</h1>
-      <ul class="flex gap-10 flex-row flex-start ml-20 mr-auto">
-        <li>Movies</li>
-        <li>TV Shows</li>
-        <li>News</li>
-        <li>Top List</li>
+    <!-- Header -->
+    <header
+      class="bg-b-0 text-xl items-center p-6 flex text-white justify-start"
+    >
+      <h1 class="text-3xl text-white font-bold">MVReview</h1>
+      <ul class="flex gap-5 flex-row flex-start ml-10 w-full">
+        <li
+          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yellow-300 group"
+        >
+          <div
+            class="w-6 h-6 bg-white group-hover:bg-yellow-300"
+            style="
+              mask-image: url('./icons/Movie.svg');
+              -webkit-mask-image: url('./icons/Movie.svg');
+              mask-size: contain;
+              -webkit-mask-size: contain;
+            "
+          ></div>
+          Movies
+        </li>
+
+        <li
+          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yellow-300 group"
+        >
+          <div
+            class="w-6 h-6 bg-white group-hover:bg-yellow-300"
+            style="
+              mask-image: url('./icons/tv.svg');
+              -webkit-mask-image: url('./icons/tv.svg');
+              mask-size: contain;
+              -webkit-mask-size: contain;
+            "
+          ></div>
+          Tv Shows
+        </li>
+
+        <li
+          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yellow-300 group"
+        >
+          <div
+            class="w-6 h-6 bg-white group-hover:bg-yellow-300"
+            style="
+              mask-image: url('./icons/news.svg');
+              -webkit-mask-image: url('./icons/news.svg');
+              mask-size: contain;
+              -webkit-mask-size: contain;
+            "
+          ></div>
+          News
+        </li>
+
+        <li
+          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yellow-300 group"
+        >
+          <div
+            class="w-6 h-6 bg-white group-hover:bg-yellow-300"
+            style="
+              mask-image: url('./icons/list.svg');
+              -webkit-mask-image: url('./icons/list.svg');
+              mask-size: contain;
+              -webkit-mask-size: contain;
+            "
+          ></div>
+          Latest Releases
+        </li>
       </ul>
 
-      <ul class="flex flex-row gap-4 mr-20">
-        <input />
-        <li>Notification</li>
-        <li>Profile</li>
+      <ul
+        class="flex flex-row gap-4 mr-5 items-center justify-end ml-auto w-full"
+      >
+        <li
+          class="bg-b-1 rounded-full h-12 pl-5 flex items-center gap-2 w-[60%]"
+        >
+          <input
+            placeholder="Search Movies..."
+            class="border-none outline-none w-full h-fit text-lg font-light"
+          />
+          <img
+            src="./icons/search.svg"
+            class="bg-b-1 rounded-full p-2 w-10 mr-4"
+            alt=""
+          />
+        </li>
+
+        <li
+          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yellow-300 group"
+        >
+          <div
+            class="w-5 h-5 bg-white group-hover:bg-yellow-300"
+            style="
+              mask-image: url('./icons/notification.svg');
+              -webkit-mask-image: url('./icons/notification.svg');
+              mask-size: contain;
+              -webkit-mask-size: contain;
+            "
+          ></div>
+        </li>
+
+        <li
+          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yellow-300 group"
+        >
+          <div
+            class="w-5 h-5 bg-white group-hover:bg-yellow-300"
+            style="
+              mask-image: url('./icons/profile.svg');
+              -webkit-mask-image: url('./icons/profile.svg');
+              mask-size: contain;
+              -webkit-mask-size: contain;
+            "
+          ></div>
+        </li>
       </ul>
     </header>
   </body>
