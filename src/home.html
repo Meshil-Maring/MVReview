@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="bg-w-0">
     <!-- Header -->
     <header
       class="bg-bg-0 text-xl items-center p-6 flex text-white justify-start"
@@ -22,6 +22,7 @@
               -webkit-mask-image: url('./icons/Movie.svg');
               mask-size: contain;
               -webkit-mask-size: contain;
+              mask-repeat: no-repeat;
             "
           ></div>
           Movies
@@ -37,6 +38,7 @@
               -webkit-mask-image: url('./icons/tv.svg');
               mask-size: contain;
               -webkit-mask-size: contain;
+              mask-repeat: no-repeat;
             "
           ></div>
           Tv Shows
@@ -52,6 +54,7 @@
               -webkit-mask-image: url('./icons/news.svg');
               mask-size: contain;
               -webkit-mask-size: contain;
+              mask-repeat: no-repeat;
             "
           ></div>
           News
@@ -67,6 +70,7 @@
               -webkit-mask-image: url('./icons/list.svg');
               mask-size: contain;
               -webkit-mask-size: contain;
+              mask-repeat: no-repeat;
             "
           ></div>
           Latest Releases
@@ -229,17 +233,68 @@
       </div>
     </div>
 
-    <h3 class="text-3xl font-bold ml-4 text-yw-0">Explore what’s streaming</h3>
+    <!-- Explore What's streaming -->
+    <div class="mt-24 mb-8 flex flex-col gap-4">
+      <h3 class="text-3xl font-bold ml-4 text-yw-0">
+        Explore what’s streaming
+      </h3>
 
-    <ul class="flex flex-row gap-8 ml-4 mt-4 items-center">
-      <li class="p-2 font-medium w-fit flex items-center gap-2">
-        <p class="h-5 w-1 bg-yw-0" />
-        <p class="w-8 text-yw-0">Netflix</p>
-      </li>
-      <li class="text-bg-1 font-medium">Disney+</li>
-      <li class="text-bg-1 font-medium">Apple TV+</li>
-      <li class="text-bg-1 font-medium">Paramount+</li>
-      <li class="text-bg-1 font-medium">Peacock</li>
-    </ul>
+      <ul class="flex flex-row gap-8 ml-4 mt-4 items-center">
+        <li class="p-2 font-medium w-fit flex items-center gap-2">
+          <p class="h-5 w-1 bg-yw-0" />
+          <p class="w-8 text-yw-0">Netflix</p>
+        </li>
+        <li class="text-bg-1 font-medium">Disney+</li>
+        <li class="text-bg-1 font-medium">Apple TV+</li>
+        <li class="text-bg-1 font-medium">Paramount+</li>
+        <li class="text-bg-1 font-medium">Peacock</li>
+      </ul>
+
+      <div class="flex gap-6 flex-row ml-4">
+        <div
+          class="flex flex-col gap-2 bg-bg-0 text-white w-fit mb-10 items-start rounded-2xl cursor-pointer relative"
+        >
+          <img src="./icons/Bookmark.svg" class="absolute w-8 right-2 top-2" />
+
+          <img
+            src="./images/midnight.jpg"
+            alt=""
+            class="h-65 w-52 object-cover rounded-2xl"
+          />
+
+          <aside class="flex pl-4 gap-2 items-center w-full">
+            <img src="./icons/star.svg" class="rounded-b-2xl" alt="" />
+            <p class="font-medium">4.4</p>
+
+            <button class="ml-auto mr-4 cursor-pointer">
+              <img src="./icons/info.svg" class="w-5" alt="" />
+            </button>
+          </aside>
+          <p class="ml-4 mb-4 font-medium">Midnight</p>
+        </div>
+
+        <div
+          class="flex flex-col gap-2 bg-bg-0 text-white w-fit mb-10 items-start rounded-2xl cursor-pointer relative"
+        >
+          <img src="./icons/Bookmark.svg" class="absolute w-8 right-2 top-2" />
+
+          <img
+            src="./images/The last adventure.jpg"
+            alt=""
+            class="h-65 w-52 object-cover rounded-2xl"
+          />
+
+          <aside class="flex pl-4 gap-2 items-center w-full">
+            <img src="./icons/star.svg" class="rounded-b-2xl" alt="" />
+            <p class="font-medium">4.8</p>
+
+            <button class="ml-auto mr-4 cursor-pointer">
+              <img src="./icons/info.svg" class="w-5" alt="" />
+            </button>
+          </aside>
+          <p class="ml-4 mb-4 font-medium">The Last Adventure</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
