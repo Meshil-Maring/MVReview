@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-w-0">
+    <!-- Header -->
+    <header
+      class="bg-bg-0 text-xl items-center p-6 flex text-white justify-start"
+    >
+      <h1 class="text-3xl text-white font-bold">MVReview</h1>
+      <ul class="flex gap-5 flex-row flex-start ml-10 w-full">
+        <li
+          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yw-0 group"
+        >
+          <div
+            class="w-6 h-6 bg-white group-hover:bg-yellow-300"
+            style="
+              mask-image: url('./assets/icons/Movie.svg');
+              -webkit-mask-image: url('./assets/icons/Movie.svg');
+              mask-size: contain;
+              -webkit-mask-size: contain;
+              mask-repeat: no-repeat;
+            "
+          ></div>
+          Movies
+        </li>
+
+        <li
+          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yw-0 group"
+        >
+          <div
+            class="w-6 h-6 bg-white group-hover:bg-yellow-300"
+            style="
+              mask-image: url('./assets/icons/tv.svg');
+              -webkit-mask-image: url('./assets/icons/tv.svg');
+              mask-size: contain;
+              -webkit-mask-size: contain;
+              mask-repeat: no-repeat;
+            "
+          ></div>
+          Tv Shows
+        </li>
+
+        <li
+          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yw-0 group"
+        >
+          <div
+            class="w-6 h-6 bg-white group-hover:bg-yellow-300"
+            style="
+              mask-image: url('./assets/icons/news.svg');
+              -webkit-mask-image: url('./assets/icons/news.svg');
+              mask-size: contain;
+              -webkit-mask-size: contain;
+              mask-repeat: no-repeat;
+            "
+          ></div>
+          News
+        </li>
+
+        <li
+          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yw-0 group"
+        >
+          <div
+            class="w-6 h-6 bg-white group-hover:bg-yellow-300"
+            style="
+              mask-image: url('./assets/icons/list.svg');
+              -webkit-mask-image: url('./assets/icons/list.svg');
+              mask-size: contain;
+              -webkit-mask-size: contain;
+              mask-repeat: no-repeat;
+            "
+          ></div>
+          Latest Releases
+        </li>
+      </ul>
+
+      <ul
+        class="flex flex-row gap-4 mr-5 items-center justify-end ml-auto w-full"
+      >
+        <li
+          class="bg-bg-1 rounded-full h-12 pl-5 flex items-center gap-2 w-[60%]"
+        >
+          <input
+            placeholder="Search Movies..."
+            class="border-none outline-none w-full h-fit text-lg font-light"
+          />
+          <img
+            src="./assets/icons/search.svg"
+            class="bg-bg-1 rounded-full p-2 w-10 mr-2"
+            alt=""
+          />
+        </li>
+
+        <li
+          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yw-0 group"
+        >
+          <div
+            class="w-5 h-5 bg-white group-hover:bg-yellow-300"
+            style="
+              mask-image: url('./assets/icons/notification.svg');
+              -webkit-mask-image: url('./assets/icons/notification.svg');
+              mask-size: contain;
+              -webkit-mask-size: contain;
+            "
+          />
+        </li>
+
+        <li
+          class="cursor-pointer flex justify-start items-center gap-2 hover:text-yw-0 group"
+        >
+          <div
+            class="w-5 h-5 bg-white group-hover:bg-yellow-300"
+            style="
+              mask-image: url('./assets/icons/profile.svg');
+              -webkit-mask-image: url('./assets/icons/profile.svg');
+              mask-size: contain;
+              -webkit-mask-size: contain;
+            "
+          ></div>
+        </li>
+      </ul>
+    </header>
+
+    <!-- Hero Seaction -->
+    <section
+      class="w-full h-[90vh] bg-cover bg-center bg-no-repeat"
+      style="background-image: url(./assets/images/Dune.jpg)"
+    >
+      <div
+        class="bg-gradient-to-r from-[#000] to-[rgba(0,0,0,0.35)] bg-opacity-50 h-full flex flex-col justify-center items-start p-20 gap-6"
+      >
+        <h2 class="text-4xl font-bold text-white">
+          Dune: Part Two
+          <p class="text-lg mt-2 font-light">2021</p>
+        </h2>
+        <div class="flex gap-4 items-center">
+          <aside class="flex gap-0 items-center">
+            <p class="text-xl font-bold text-yw-0 mr-2">4.8</p>
+            <img src="./assets/icons/star.svg" alt="" />
+            <img src="./assets/icons/star.svg" alt="" />
+            <img src="./assets/icons/star.svg" alt="" />
+            <img src="./assets/icons/star.svg" alt="" />
+            <img src="./assets/icons/half-start.svg" alt="" />
+          </aside>
+
+          <p class="text-xl text-w-0">96% Critics Score</p>
+          <p class="text-xl text-w-0">15.2K Reviews</p>
+        </div>
+
+        <aside class="w-[50%] text-white text-xl">
+          The saga continues as Paul Atreides unites with Chani and the Fremen
+          while seeking revenge against the conspirators who destroyed his
+          family.
+        </aside>
+
+        <div class="flex gap-4">
+          <button
+            class="bg-red-700 text-xl h-12 flex items-center px-6 text-white rounded-full cursor-pointer"
+          >
+            Read More
+          </button>
+          <button
+            class="bg-[#ffffff5f] text-xl h-12 flex items-center px-6 text-white rounded-full cursor-pointer gap-2"
+          >
+            <img src="./assets/icons/play.svg" alt="" />
+            Watch Trailer
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Now in Theaters -->
+    <div class="mt-24 mb-8">
+      <aside class="flex flex-row gap-1 ml-4 mb-8 items-center">
+        <p class="h-8 bg-yw-0 w-1"></p>
+        <h3 class="text-3xl font-bold text-bg-0 ml-4">Now in Theaters</h3>
+
+        <div class="ml-auto flex gap-4 items-center">
+          <button
+            class="bg-[#ffffff5f] text-xl h-12 flex items-center px-6 text-bg-0 rounded-full cursor-pointer gap-2"
+          >
+            View All
+          </button>
+        </div>
+      </aside>
+      <div class="flex gap-6 flex-row ml-4">
+        <div
+          class="flex flex-col gap-2 bg-bg-0 text-white w-fit mb-10 items-start rounded-2xl cursor-pointer relative"
+        >
+          <img
+            src="./assets/icons/Bookmark.svg"
+            class="absolute w-8 right-2 top-2"
+          />
+
+          <img
+            src="./assets/images/midnight.jpg"
+            alt=""
+            class="h-65 w-52 object-cover rounded-2xl"
+          />
+
+          <aside class="flex pl-4 gap-2 items-center w-full">
+            <img src="./assets/icons/star.svg" class="rounded-b-2xl" alt="" />
+            <p class="font-medium">4.4</p>
+
+            <button class="ml-auto mr-4 cursor-pointer">
+              <img src="./assets/icons/info.svg" class="w-5" alt="" />
+            </button>
+          </aside>
+          <p class="ml-4 mb-4 font-medium">Midnight</p>
+        </div>
+
+        <div
+          class="flex flex-col gap-2 bg-bg-0 text-white w-fit mb-10 items-start rounded-2xl cursor-pointer relative"
+        >
+          <img
+            src="./assets/icons/Bookmark.svg"
+            class="absolute w-8 right-2 top-2"
+          />
+
+          <img
+            src="./assets/images/The last adventure.jpg"
+            alt=""
+            class="h-65 w-52 object-cover rounded-2xl"
+          />
+
+          <aside class="flex pl-4 gap-2 items-center w-full">
+            <img src="./assets/icons/star.svg" class="rounded-b-2xl" alt="" />
+            <p class="font-medium">4.8</p>
+
+            <button class="ml-auto mr-4 cursor-pointer">
+              <img src="./assets/icons/info.svg" class="w-5" alt="" />
+            </button>
+          </aside>
+          <p class="ml-4 mb-4 font-medium">The Last Adventure</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Explore What's streaming -->
+    <div class="mt-24 mb-8 flex flex-col gap-4">
+      <h3 class="text-3xl font-bold ml-4 text-yw-0">
+        Explore what’s streaming
+      </h3>
+
+      <ul class="flex flex-row gap-8 ml-4 mt-4 items-center">
+        <li class="p-2 font-medium w-fit flex items-center gap-2">
+          <p class="h-5 w-1 bg-yw-0" />
+          <p class="w-8 text-yw-0">Netflix</p>
+        </li>
+        <li class="text-bg-1 font-medium">Disney+</li>
+        <li class="text-bg-1 font-medium">Apple TV+</li>
+        <li class="text-bg-1 font-medium">Paramount+</li>
+        <li class="text-bg-1 font-medium">Peacock</li>
+      </ul>
+
+      <div class="flex gap-6 flex-row ml-4">
+        <div
+          class="flex flex-col gap-2 bg-bg-0 text-white w-fit mb-10 items-start rounded-2xl cursor-pointer relative"
+        >
+          <img
+            src="./assets/icons/Bookmark.svg"
+            class="absolute w-8 right-2 top-2"
+          />
+
+          <img
+            src="./assets/images/midnight.jpg"
+            alt=""
+            class="h-65 w-52 object-cover rounded-2xl"
+          />
+
+          <aside class="flex pl-4 gap-2 items-center w-full">
+            <img src="./assets/icons/star.svg" class="rounded-b-2xl" alt="" />
+            <p class="font-medium">4.4</p>
+
+            <button class="ml-auto mr-4 cursor-pointer">
+              <img src="./assets/icons/info.svg" class="w-5" alt="" />
+            </button>
+          </aside>
+          <p class="ml-4 mb-4 font-medium">Midnight</p>
+        </div>
+
+        <div
+          class="flex flex-col gap-2 bg-bg-0 text-white w-fit mb-10 items-start rounded-2xl cursor-pointer relative"
+        >
+          <img
+            src="./assets/icons/Bookmark.svg"
+            class="absolute w-8 right-2 top-2"
+          />
+
+          <img
+            src="./assets/images/The last adventure.jpg"
+            alt=""
+            class="h-65 w-52 object-cover rounded-2xl"
+          />
+
+          <aside class="flex pl-4 gap-2 items-center w-full">
+            <img src="./assets/icons/star.svg" class="rounded-b-2xl" alt="" />
+            <p class="font-medium">4.8</p>
+
+            <button class="ml-auto mr-4 cursor-pointer">
+              <img src="./assets/icons/info.svg" class="w-5" alt="" />
+            </button>
+          </aside>
+          <p class="ml-4 mb-4 font-medium">The Last Adventure</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
