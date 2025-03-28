@@ -5,14 +5,14 @@ function loadComponent(id, file) {
     .catch((error) => console.error(error));
 }
 
-loadComponent("header", "../components/common/header.html");
+// loadComponent("header", "../components/common/header.html");
 
-// Home page components
-loadComponent("hero-section", "../components/home/hero-section.html");
-loadComponent("now-in-theaters", "../components/home/now-in-theaters.html");
-loadComponent(
-  "explore-whats-streaming",
-  "../components/home/explore-whats-streaming.html"
-);
-loadComponent("footer", "../components/common/footer.html");
+// // Home page components
+// loadComponent("hero-section", "../components/home/hero-section.html");
+// loadComponent("now-in-theaters", "../components/home/now-in-theaters.html");
+// loadComponent(
+//   "explore-whats-streaming",
+//   "../components/home/explore-whats-streaming.html"
+// );
+// loadComponent("footer", "../components/common/footer.html");
 loadComponent("top-pick", "../components/home/top-pick.html");
