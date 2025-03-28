@@ -15,3 +15,4 @@ loadComponent(
   "../components/home/explore-whats-streaming.html"
 );
 loadComponent("footer", "../components/common/footer.html");
+loadComponent("top-pick", "../components/home/top-pick.html");
